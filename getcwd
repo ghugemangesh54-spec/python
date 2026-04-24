@@ -1,0 +1,10 @@
+import os
+current_dir = os.getcwd()
+print("Current Directory:", current_dir)
+print("\nEntries:")
+for item in os.listdir(current_dir):
+    path = os.path.join(current_dir, item)
+        if os.path.isfile(path):
+        print(item, "- File")
+    elif os.path.isdir(path):
+        print(item, "- Folder")
