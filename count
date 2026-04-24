@@ -1,0 +1,15 @@
+import os
+
+files = os.listdir()
+
+print("All Files:")
+for f in files:
+    print(f)
+
+py_files = [f for f in files if f.endswith('.py')]
+print("Total .py files:", len(py_files))
+
+if py_files:
+    with open(py_files[0], 'r') as file:
+        print("\nContent of", py_files[0])
+        print(file.read())
