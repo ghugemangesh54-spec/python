@@ -1,0 +1,14 @@
+import requests
+
+url = input("Enter URL: ")
+
+try:
+    response = requests.get(url)
+    
+    if response.status_code == 200:
+        print("Valid URL")
+    else:
+        print("Invalid URL")
+
+except:
+    print("Invalid URL")
