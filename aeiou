@@ -1,0 +1,14 @@
+s = input("Enter a string: ")
+
+words = s.split()
+
+vowels = "aeiouAEIOU"
+
+no_vowel_words = [word for word in words if all(ch not in vowels for ch in word)]
+
+
+no_vowel_words.sort()
+
+print("Words without vowels:", no_vowel_words)
+print("Sorted words:", no_vowel_words)
+print("Count:", len(no_vowel_words))
