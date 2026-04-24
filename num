@@ -1,0 +1,8 @@
+import re
+
+s = input("Enter a string: ")
+
+numbers = re.findall(r'\d+', s)
+
+# Display result
+print("Extracted Numbers:", numbers)
