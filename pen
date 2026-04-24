@@ -1,0 +1,23 @@
+import pandas as pd
+
+data = {
+    "Item": ["Pencil", "Pencil", "Pen", "Pen", "Eraser"],
+    "Company": ["Apsara", "Natraj", "Cello", "Parkar", "Apsara"],
+    "Count": [15, 20, 25, 35, 20],
+    "Price": [250, 200, 600, 900, 300]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+print(df[df["Item"] == "Pencil"])
+
+df.loc[df["Item"] == "Eraser", "Count"] = 25
+print(df)
+
+print(df[["Company", "Price"]])
+
+print(df[df["Item"].isin(["Pencil", "Pen"])])
+
+df["Colour"] = ["Red", "Blue", "Black", "Green", "White"]
+print(df)
