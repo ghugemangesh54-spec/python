@@ -1,0 +1,9 @@
+import random
+
+lst = [10, 20, 30, 40, 50]
+
+print("Original List:", lst)
+
+random.shuffle(lst)
+
+print("Shuffled List:", lst)
