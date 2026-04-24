@@ -1,0 +1,11 @@
+import re
+
+word = input("Enter a word: ")
+
+pattern = r'^[cm][aeiou][td]$'
+
+# Validate
+if re.match(pattern, word):
+    print("Valid word")
+else:
+    print("Invalid word")
