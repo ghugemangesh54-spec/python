@@ -1,0 +1,22 @@
+import time
+from datetime import datetime
+
+local_time = time.localtime()
+utc_time = time.gmtime()
+
+print("Local Time:", local_time)
+print("UTC Time:", utc_time)
+
+print("\nUsing ctime():", time.ctime())   # Human-readable local time
+print("Using gmtime():", time.gmtime())  # UTC in struct_time format
+
+date_str = input("\nEnter date and time (DD-MM-YYYY HH:MM:SS): ")
+
+parsed_date = datetime.strptime(date_str, "%d-%m-%Y %H:%M:%S")
+
+format1 = parsed_date.strftime("%A, %d %B %Y %I:%M:%S %p")
+format2 = parsed_date.strftime("%Y/%m/%d - %H:%M")
+
+print("\nFormatted Output:")
+print("Format 1:", format1)
+print("Format 2:", format2)
