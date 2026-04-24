@@ -1,0 +1,6 @@
+s = input("Enter a string: ")
+
+result = s.replace('a', '*')
+
+# Display result
+print("Modified String:", result)
