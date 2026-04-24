@@ -1,0 +1,9 @@
+import random
+
+my_list = [10, 20, 30, 40, 50]
+my_string = "PYTHON"
+my_tuple = (1, 2, 3, 4, 5)
+
+print("Random elements from list:", random.sample(my_list, 3))
+print("Random elements from string:", random.sample(my_string, 3))
+print("Random elements from tuple:", random.sample(my_tuple, 3))
