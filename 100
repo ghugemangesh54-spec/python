@@ -1,0 +1,9 @@
+def productInfo(name, price=100):
+    if price < 100:
+        print("Product Name:", name)
+    else:
+        print("Price is not less than 100")
+
+productInfo("Pen", 50)          
+productInfo("Book", 150
+productInfo("Pencil")        
