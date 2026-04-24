@@ -1,0 +1,9 @@
+import random
+import math
+
+radius = random.randint(1, 10)
+
+circumference = 2 * 3.14 * radius
+
+print("Radius:", radius)
+print("Circumference:", circumference)
