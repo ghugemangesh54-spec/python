@@ -1,0 +1,22 @@
+ interest.py
+def cal_interest(amount, year):
+    rate = 0.05
+    interest = amount * rate * year
+    return interest
+ currency.py
+def convert(amount):
+    rate = 0.012
+    usd = amount * rate
+    return usd
+ main.py
+from finance_tools.interest import cal_interest
+from finance_tools.currency import convert
+
+amt = 10000
+yr = 2
+
+interest = cal_interest(amt, yr)
+usd = convert(amt)
+
+print("Simple Interest:", interest)
+print("Amount in USD:", usd)
