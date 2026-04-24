@@ -1,0 +1,18 @@
+def check_pass_fail(marks):
+    if marks >= 40:
+        return "Pass"
+    else:
+        return "Fail"
+n = int(input("Enter number of students: "))
+pass_count = 0
+fail_count = 0
+for i in range(n):
+    marks = int(input(f"Enter marks of student {i+1}: "))
+    result = check_pass_fail(marks)
+    print(f"Student {i+1} Result:", result)
+    if result == "Pass":
+        pass_count += 1
+    else:
+        fail_count += 1
+print("\nTotal Passed:", pass_count)
+print("Total Failed:", fail_count)
