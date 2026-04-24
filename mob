@@ -1,0 +1,3 @@
+data={'mobile':['1+','apple','realme'],'price':[12000,23000,1209]}
+df=pd.DataFrame(data)
+print(df)
