@@ -1,0 +1,23 @@
+import pandas as pd
+
+data = {
+    "Player": ["Hardik Pandya", "K L Rahul", "Andre Russel", "Jasprit Bumrah", "Virat Kohli", "Rohit Sharma"],
+    "Team": ["Mumbai Indians", "Kings Eleven", "Kolkata Knight Riders", "Mumbai Indians", "RCB", "Mumbai Indians"],
+    "Category": ["Batsman", "Batsman", "Batsman", "Bowler", "Batsman", "Batsman"],
+    "BidPrice": [13, 12, 7, 10, 17, 15],
+    "Runs": [1000, 2400, 900, 200, 3600, 3700]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+print(df.head(2))
+
+print(df.tail(3))
+
+df.loc[2, "Runs"] = None   # Add null value
+print(df)
+
+print(df.loc[df["BidPrice"].idxmax()])
+
+print(df.groupby("Team").size())
