@@ -1,0 +1,10 @@
+# Accept input
+m = int(input("Enter value of m: "))
+n = int(input("Enter value of n: "))
+
+try:
+    result = m / n
+    print("Result:", result)
+
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero")
